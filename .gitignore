@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+build/
+dist/
+ADSWildfireDixie.egg-info/
+dist/
+data/
+dixie/__pycache__/

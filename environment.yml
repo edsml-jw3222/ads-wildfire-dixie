@@ -1,0 +1,48 @@
+name: dixie
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - ipython=7.28  
+  - joblib=0.14  
+  - jupyter=1.0  
+  - matplotlib=3.4  
+  - numpy=1.19  
+  - pandas=1.3  
+  - pillow=8.3  
+  - pip  
+  - python=3.8 
+  - scikit-learn=1.0  
+  - scipy=1.7  
+  - tqdm=4.62  
+  - wheel  
+  - widgetsnbextension=3.5  
+  - openpyxl = 3.0.9
+  - pip:
+    - seaborn
+    - requests
+    - datetime
+    - rfc3339
+    - pandas
+    - numpy
+    - textblob
+    - wordcloud
+    - matplotlib
+    - spacy 
+    - calplot
+    - dask
+    - tensorboard-plugin-profile~=2.5.0  
+    - tensorboard~=2.8.0  
+    - tensorflow-datasets~=4.5.0  
+    - tensorflow-hub~=0.12.0  
+    - tensorflow-probability~=0.15.0  
+    - tensorflow-serving-api~=2.7.0  
+    - tensorflow~=2.7.0 
+    - tf-agents~=0.11.0  
+    - tfx~=1.5.0  
+    - transformers~=4.16.0 
+    
+# Specific lib versions to avoid conflicts
+    - xlrd==1.2.0

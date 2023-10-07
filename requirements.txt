@@ -1,0 +1,5 @@
+pytest
+numpy
+tensorflow
+matplotlib
+scikit-learn

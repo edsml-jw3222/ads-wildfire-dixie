@@ -1,0 +1,29 @@
+name: run-tests
+
+on:
+   pull_request:
+     branches:
+       - master
+       - main
+
+# This job installs dependencies and runs tests
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10.9'
+
+    - name: Package and data setup
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -e .
+
+    # Run tests
+    - name: run tests
+      run: |
+        pytest
